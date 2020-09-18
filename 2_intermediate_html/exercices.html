@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form exercise</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <div>
+                <label for="first">First Name : </label>
+                <input type="text" name="name" id="first" placeholder="John" required>
+                <label for="last">Last Name : </label>
+                <input type="text" name="name" id="last" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="g_m">Male </label>
+                <input type="radio" id="g_m" name="radio-choice" value="choice-1">
+                <label for="g_f">Female </label>
+                <input type="radio" id="f_m" name="radio-choice" value="choice-2">
+                <label for="g_o">Other </label>
+                <input type="radio" id="o_m" name="radio-choice" value="choice-3">
+            </div>
+            <div>
+                <label for="Email">Email : </label>
+                <input type="email" id="Email" placeholder="Your email" required>
+                <label for="Password">Password : </label>
+                <input type="password" id="Password" required pattern="^{5,10}$">
+            </div>
+            <div>
+                <label for="choice">Birthday : </label>
+                <select name="birthday_month" id="choice">
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                </select>
+                <select name="birthday_day" id="choice">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <select name="birthday_year" id="choice">
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                </select>
+            </div>
+            <div>
+                <label for="check">I agree to the terms and conditions </label>
+                <input type="checkbox" name="check_agree" required>
+            </div>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
